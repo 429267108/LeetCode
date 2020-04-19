@@ -27,6 +27,8 @@ Total length of input string will be 3n, where 1 ≤ n ≤ 20.
 Total number of H will be 2n in the input string.
 Total number of O will be n in the input string.
 
+## Food for thought
+多线程题目，java语言控制线程操作顺序可以使用Semaphore类，可以直接解决线程问题
 
 ## Solution Code
 ```Java
@@ -35,7 +37,6 @@ class H2O {
     public H2O() {
         
     }
-
     
     private Semaphore hydrogen = new Semaphore(2);
     private Semaphore oxygen = new Semaphore(0);
